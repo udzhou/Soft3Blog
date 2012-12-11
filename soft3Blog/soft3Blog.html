@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />		
+		<title>深职院10软件三班</title>
+		<meta name="description" content="Class Website" />
+		<meta name="author" content="udzhou" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link type="text/css" rel="stylesheet" media="all" href="css/styles.css" />
+		<link type="text/css" rel="stylesheet" media="screen" href="css/welli.css"/>
+	</head>
+	<body onload="creWelcome()">
+		<div id="wrapper">
+			<header>
+				<canvas id="top" width="900px" height="80px"></canvas>
+				<div id="side1">
+					深职院10软件三班
+				</div>
+			</header>
+			<nav class="menu">
+				<ul>
+					<li class="active">
+						<a href="" class="menu-welcome"><span><span><span><span>欢迎光临
+										<br />
+										Welcome</span></span></span></span></a>
+					</li>
+					<li>
+						<a onclick="creHome()" href="">班级主页</a>
+					</li>
+					<li>
+						<a onclick="creMember()" href="">班级成员</a>
+					</li>
+					<li>
+						<a onclick="creAlbum()" href="">班级相册</a>
+					</li>
+					<li>
+						<a onclick="creActivity()"  href="">班级活动</a>
+					</li>
+					<li>
+						<a onclick="creBlog()" href="">班级博客</a>
+					</li>
+					<li>
+						<a onclick="creInfo()" href="">班级资料</a>
+					</li>
+					<li>
+						<iframe width="136" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=136&height=24&uid=1745525733&style=2&btn=light&dpc=1"></iframe>
+					</li>
+				</ul>
+				<div class="floatr"></div>
+			</nav>
+			<canvas id="welcome" width="895px" height="584px" style="margin-top: 10px"></canvas>
+			<article></article>
+			<article id="content"></article>
+			<footer>
+				<p align="center">
+					&copy; Copyright  by udzhou
+				</p>
+			</footer>
+		</div>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+		<script src="js/menu.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			(function() {
+				var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body")).text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+					$("html, body").animate({
+						scrollTop : 0
+					}, 120);
+				}), $backToTopFun = function() {
+					var st = $(document).scrollTop(), winh = $(window).height(); (st > 0) ? $backToTopEle.show() : $backToTopEle.hide();
+
+					if(!window.XMLHttpRequest) {
+						$backToTopEle.css("top", st + winh - 166);
+					}
+				};
+				$(window).bind("scroll", $backToTopFun);
+				$(function() {
+					$backToTopFun();
+				});
+			})();
+		</script>
+	</body>
+</html>

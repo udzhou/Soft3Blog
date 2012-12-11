@@ -1,0 +1,46 @@
+.menu-welcome {
+	display:block;
+	width:8em;
+	height:2em;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	rotation:180deg;	
+	top:3.75em;
+	left:2em;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+	font-family:Arial, sans-serif;
+}
+.menu-welcome span {
+	display:block;
+	margin:0 auto;
+	width:6em;
+	height:2.5em;
+	background:#f00;
+	text-shadow:0 0 3em #04b3df, 0 0 4px #0077e5;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	rotation:45deg;
+	-moz-transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+.menu-welcome:hover span {
+	background:#f90;
+	width:8em;
+	-moz-border-radius:2.5em;
+	-webkit-border-radius:2.5em;
+	border-radius:2.5em;
+	text-shadow:0 0 3em #f00, 0 0 4px #f88;
+}
+.menu-welcome:hover {
+	left:2em;
+	width:8em;
+	background:transparent;
+}
+
+
+
+

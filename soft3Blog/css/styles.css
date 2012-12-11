@@ -1,0 +1,99 @@
+body {
+	font-family: Georgia;
+	font-size: 14px;
+	text-shadow: 0 1px 0 rgba(255,255,255,.50);
+	color: #262626;
+	background: url(../images/wood-bg.jpg);
+}
+#side1 {
+	color: #f90;
+	/*background-color:#99FF33;*/
+	-webkit-box-shadow: 2px 2px 20px #888;
+	-webkit-transform: rotate(-45deg);
+	-moz-box-shadow: 2px 2px 20px #888;
+	-moz-transform: rotate(-45deg);
+	position: absolute;
+	padding: 0px 150px;
+	top: 50px;
+	left: -340px;
+	text-align: center;
+	font-size: 23px;
+}
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu {
+	display: block;
+	position: relative;
+	border: 1px solid #d6d6d6;
+	/*background: #fff; #d6d6d6*/
+	padding: 15px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(204,204,204)));
+	background: -moz-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(204,204,204)));
+	height: 18px;
+}
+a {
+	text-decoration: none;
+	color: #9F3;
+	line-height: 20px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	z-index: 300;
+	position: absolute;
+}
+ul li {
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+ul li a {
+	padding: 0 20px;
+	text-align: center;
+	color: #262626;
+}
+.floatr {
+	position: absolute;
+	top: 10px;
+	z-index: 50;
+	width: 70px;
+	height: 30px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: rgba(0,0,0,.20);
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+}
+#homeTitle, #albumTitle, #memberTitle, #blogTitle, #activityTitle,#infoTitle {
+	text-align: center;
+	color: #99FF33;
+	font-size: 20px;
+}
+
+.backToTop {
+    display: none;
+    width: 18px;
+    line-height: 1.2;
+    padding: 5px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 100px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity 60);
+}
